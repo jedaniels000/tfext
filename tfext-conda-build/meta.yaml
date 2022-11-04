@@ -1,0 +1,28 @@
+package:
+  name: tfext
+  version: "0.0.1"
+
+source:
+  path: ../base-tfext
+
+requirements:
+  build:
+    - python
+    - setuptools
+
+  run:
+    - python
+    - numpy
+    - tensorflow
+    - keras
+    - matplotlib
+    - h5py
+    - wandb
+    - absl-py
+
+test:
+  imports:
+    - tfext
+
+about:
+  home:
